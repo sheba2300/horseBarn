@@ -1,6 +1,11 @@
 public class HorseBarn {
+
     private Horse[] spaces;
 
+    public HorseBarn(Horse[] array)
+    {
+        this.spaces = array;
+    }
     public void consolidate() {
         for (int i = 0; i < this.spaces.length-1; i++) {
             if (this.spaces[i] == null) {
